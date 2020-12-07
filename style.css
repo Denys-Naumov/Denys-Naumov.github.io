@@ -292,9 +292,9 @@ i {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.laptop-links p a:hover {
+.laptop-links:nth-child(1) a:hover, .laptop-links:nth-child(2) a:hover {
   text-decoration: underline;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .laptops {
@@ -316,6 +316,7 @@ i {
   display: block;
   font-size: 30px;
   background-color: #2c71b8;
+  outline: #2c71b8;
   color: white;
   height: 40px;
   width: 270px;
