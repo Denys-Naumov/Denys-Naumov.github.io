@@ -32,6 +32,10 @@ body {
   width: 75%;
 }
 
+.col-md-12 {
+  width: 100%;
+}
+
 .laptop-links:after {
   content: "";
   display: block;
@@ -65,8 +69,6 @@ body {
   transform: scale(1.05);
 }
 
-
-
 .text-align-center {
   text-align: center;
 }
@@ -79,7 +81,7 @@ body {
 
 /* LOGO */
 
-.header {
+.white-rgba {
   height: 100px;
   padding: 25px 0;
   background-color: rgba(255, 255, 255, 0.75);
@@ -259,22 +261,54 @@ i {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar p, .device-container p {
+.sidebar input[type="checkbox"] {
+  display: none;
+}
+
+.sidebar label:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: #fff;
+}
+
+.sidebar input[type="checkbox"]:checked + label:before {
+  background-color: #2c71b8;
+}
+
+.sidebar p {
   display: block;
   color: #fff;
-  margin: 0 10px 20px 10px;
+  font-size: 21px;
+  padding: 30px 0 0 0;
+}
+
+.sidebar .sidebar-p-uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 25px;
+  padding-top: 30px;
+  color: #fff;
   font-size: 21px;
 }
 
-.sidebar-p-uppercase {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-top: 30px;
+.show-more-options {
+  margin-bottom: 20px;
 }
 
-.sidebar input {
-  float: left;
+.sidebar label, .device-container p {
+  display: block;
+  color: #fff;
+  padding: 5px;
+  margin: 10px;
+  font-size: 21px;
 }
+
 
 /* LAPTOPS AND TABLETS */
 
@@ -292,7 +326,8 @@ i {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.laptop-links:nth-child(1) a:hover, .laptop-links:nth-child(2) a:hover {
+.laptop-links a:nth-child(1):hover,
+.laptop-links a:nth-child(2):hover {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -301,6 +336,7 @@ i {
   width: 60%;
   font-size: 48px;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 /* SORT */
@@ -327,7 +363,7 @@ i {
 
 .device-container {
   border: 1px solid #fff;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .price {
@@ -396,4 +432,27 @@ i {
 .device-icon-2 {
   top: 25%;
   right: 5%;
+}
+
+.load-more {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 70px;
+}
+
+.load-more a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* FOOTER */
+
+.footer {
+  font-size: 36px;
+  color: #2c71b8;
+  padding: 32px 0;
+}
+
+.footer p {
+  font-weight: 100;
 }

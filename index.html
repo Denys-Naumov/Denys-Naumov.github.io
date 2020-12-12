@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/0196a44e1f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>SAIT</title>
+    <title>Site-Project</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header white-rgba">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -138,36 +140,36 @@
           <div class="col-md-3">
             <div class="sidebar">
               <p class="sidebar-p-uppercase">Device Type</p>
-              <input type="radio" name="type" />
-              <p>LapTop</p>
-              <input type="radio" name="type" />
-              <p>Tablet</p>
+              <input type="checkbox" name="type" id="check1"/>
+              <label for="check1">LapTop</label>
+              <input type="checkbox" name="type" id="check2"/>
+              <label for="check2">Tablet</label>
 
               <p class="sidebar-p-uppercase">Color</p>
-              <input type="radio" name="color" />
-              <p>Black</p>
-              <input type="radio" name="color" />
-              <p>Red</p>
-              <input type="radio" name="color" />
-              <p>Green</p>
-              <input type="radio" name="color" />
-              <p>Blue</p>
-              <input type="radio" name="color" />
-              <p>Orange</p>
+              <input type="checkbox" name="type" id="check3"/>
+              <label for="check3">Black</label>
+              <input type="checkbox" name="type" id="check4"/>
+              <label for="check4">Red</label>
+              <input type="checkbox" name="type" id="check5"/>
+              <label for="check5">Green</label>
+              <input type="checkbox" name="type" id="check6"/>
+              <label for="check6">Blue</label>
+              <input type="checkbox" name="type" id="check7"/>
+              <label for="check7">Orange</label>
 
               <p class="sidebar-p-uppercase">RAM</p>
-              <input type="radio" name="ram" />
-              <p>1 GB</p>
-              <input type="radio" name="ram" />
-              <p>2 GB</p>
-              <input type="radio" name="ram" />
-              <p>4 GB</p>
-              <input type="radio" name="ram" />
-              <p>6 GB</p>
-              <input type="radio" name="ram" />
-              <p>8 GB</p>
+              <input type="checkbox" name="type" id="check8"/>
+              <label for="check8">1 GB</label>
+              <input type="checkbox" name="type" id="check9"/>
+              <label for="check9">2 GB</label>
+              <input type="checkbox" name="type" id="check10"/>
+              <label for="check10">4 GB</label>
+              <input type="checkbox" name="type" id="check11"/>
+              <label for="check11">6 GB</label>
+              <input type="checkbox" name="type" id="check12"/>
+              <label for="check12">8 GB</label>
 
-              <p class="text-align-center">Show more options ...</p>
+              <p class="show-more-options text-align-center">Show more options ...</p>
               <button class="btn">Submit</button>
             </div>
           </div>
@@ -293,9 +295,22 @@
               <button class="btn">ADD TO CART</button>
             </div>
           </div>
+          <div class="load-more">
+            <a href="#">Load More ...</a>
+          </div>
         </div>
         </div>
       </div>
     </main>
+
+    <footer class="footer white-rgba">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-align-center" >
+            <p>© Copyright 2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
