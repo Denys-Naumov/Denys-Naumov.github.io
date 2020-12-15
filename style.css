@@ -425,13 +425,33 @@ i {
 }
 
 .device-icon-1 {
+  background: url(img/icon-8.png)center no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #2c71b8;
   top: 5%;
   right: 5%;
 }
 
+.device-icon-1:hover {
+  background: url(img/icon-6.png)center no-repeat;
+  background-color: #2c71b8;
+}
+
 .device-icon-2 {
+  background: url(img/icon-5.png)center no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #2c71b8;
   top: 25%;
   right: 5%;
+}
+
+.device-icon-2:hover {
+  background: url(img/icon-7.png)center no-repeat;
+  background-color: #2c71b8;
 }
 
 .load-more {
