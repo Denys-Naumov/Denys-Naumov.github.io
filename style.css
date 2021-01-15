@@ -434,6 +434,7 @@ i {
   right: 5%;
 }
 
+
 .device-icon-1:hover {
   background: url(img/icon-6.png)center no-repeat;
   background-color: #2c71b8;
@@ -450,8 +451,7 @@ i {
 }
 
 .device-icon-2:hover {
-  background: url(img/icon-7.png)center no-repeat;
-  background-color: #2c71b8;
+  transform: scale(1.1);
 }
 
 .load-more {
@@ -475,4 +475,61 @@ i {
 
 .footer p {
   font-weight: 100;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: none;
+}
+
+.modal-block {
+  width: 300px;
+  margin: 80px auto;
+  height: 200px;
+  border: 1px solid grey;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.form-field {
+  margin: 10px 0;
+}
+
+.form-field input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+.btn-close {
+  text-align: right;
+}
+
+.modal-block button {
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+
+/* JS CLASSES */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.heart-icon-blue {
+  background: url(img/icon-7.png)center no-repeat;
+  background-color: #2c71b8;
 }
