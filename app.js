@@ -6,7 +6,8 @@ let addToCartButtons = document.querySelectorAll(".add-to-cart");
 for (let i = 0; i < addToCartButtons.length; i++) {
   addToCartButtons[i].addEventListener("click", function () {
     // productCountEl.innerText++;
-    productCountEl.textContent = +productCountEl.textContent + 1;
+    productCountEl.textContent = +productCountEl.textContent + +quantityValue[i].value;
+    quantityValue[i].value = 1;
   });
 }
 
